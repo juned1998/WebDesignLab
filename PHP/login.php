@@ -32,12 +32,14 @@
 			$username = $_POST['username'];
 			$pass 	  = $_POST['pass'];
 			if($username=="juned" && $pass=="12345"){
-				echo '<span>Login Successful!
-				you will be redirected to blog page</span>';
+				// echo '<span>Login Successful!
+				// you will be redirected to blog page</span>';
 				$_SESSION['user'] = $username ;
 				$_SESSION['college'] = "AIKTC" ;
 				$_SESSION['class'] = "TE" ;
 				$_SESSION['batch'] = "B3" ;
+				echo '<span>Login Successful!
+				you will be redirected to blog page</span>';
 				header("Refresh : 0  , url = blog.php");
 			}
 			else {
